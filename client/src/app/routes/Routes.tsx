@@ -12,10 +12,19 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             { path: '', element: <HomePage /> },
-            { path: 'catalog', element: <Catalog /> },
-            { path: 'catalog/:id', element: <ProductDetails /> },
-            { path: 'about', element: <AboutPage /> },
-            { path: 'contact', element: <ContactPage /> },
+            { path: '/catalog', element: <Catalog /> },
+            { path: '/catalog/:id', element: <ProductDetails /> },
+            { path: '/about', element: <AboutPage /> },
+            { path: '/contact', element: <ContactPage /> },
         ]
     }
-]);
+], {
+    future: {
+        // v7_relativeSplatPath: true,
+        // v7_fetcherPersist: true,
+        // v7_normalizeFormMethod: true,
+        // v7_partialHydration: true,
+        // v7_skipActionErrorRevalidation: true
+
+    }
+})
