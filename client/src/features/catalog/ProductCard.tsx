@@ -61,60 +61,62 @@ export default function ProductCard({ product }: Props) {
         </Typography>
       </CardContent>
 
-      <CardActions sx={{ 
-        justifyContent: 'space-between', 
-        px: 2, 
+      <CardActions sx={{
+        justifyContent: 'space-between',
+        px: 2,
         pb: 2,
         gap: 1
       }}>
         <Button
-          size="small"
-          startIcon={<AddShoppingCartOutlinedIcon />}
-          sx={{
-            textTransform: 'none',
-            fontWeight: 600,
-            borderRadius: 2,
-            px: 2,
-            py: 1.5,
-            minWidth: 0,
-            flex: 1,
-            color: 'text.primary',
-            border: '2px solid', // Tăng độ dày border từ 1px lên 2px
-            borderColor: 'text.secondary', // Sử dụng màu đậm hơn
-            '&:hover': {
-              backgroundColor: 'rgba(0, 0, 0, 0.04)', // Màu hover tinh tế
-              borderColor: 'text.primary', // Border đậm hơn khi hover
-              borderWidth: '2px' // Giữ nguyên độ dày khi hover
-            }
-          }}
-        >
-          Add
-        </Button>
+  size="small"
+  startIcon={<AddShoppingCartOutlinedIcon />}
+  sx={{
+    textTransform: 'none',
+    fontWeight: 600,
+    fontSize: '1rem', // Thêm kích thước chữ
+    borderRadius: 2,
+    px: 2,
+    py: 1.5,
+    minWidth: 0,
+    flex: 1,
+    color: 'text.primary',
+    border: '2px solid',
+    borderColor: 'text.secondary',
+    '&:hover': {
+      backgroundColor: 'rgba(0, 0, 0, 0.04)',
+      borderColor: 'text.primary',
+      borderWidth: '2px'
+    }
+  }}
+>
+  Add
+</Button>
 
-        <Button
-          component={Link}
-          to={`/catalog/${product.id}`}
-          onClick={() => dispatch(startLoading())}
-          size="small"
-          variant="contained"
-          endIcon={<VisibilityOutlinedIcon />}
-          sx={{
-            textTransform: 'none',
-            fontWeight: 600,
-            borderRadius: 2,
-            px: 2,
-            py: 1.5,
-            minWidth: 0,
-            flex: 1,
-            boxShadow: 'none',
-            '&:hover': {
-              boxShadow: 'none',
-              backgroundColor: 'primary.dark'
-            }
-          }}
-        >
-          Details
-        </Button>
+<Button
+  component={Link}
+  to={`/catalog/${product.id}`}
+  onClick={() => dispatch(startLoading())}
+  size="small"
+  variant="contained"
+  endIcon={<VisibilityOutlinedIcon />}
+  sx={{
+    textTransform: 'none',
+    fontWeight: 1000,
+    fontSize: '1rem', // Thêm kích thước chữ
+    borderRadius: 2,
+    px: 2,
+    py: 1.5,
+    minWidth: 0,
+    flex: 1,
+    boxShadow: 'none',
+    '&:hover': {
+      boxShadow: 'none',
+      backgroundColor: 'primary.dark'
+    }
+  }}
+>
+  Details
+</Button> 
       </CardActions>
     </Card>
   );
