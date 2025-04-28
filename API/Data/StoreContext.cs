@@ -8,7 +8,7 @@ namespace API.Data
     {
         public required DbSet<Product> Products { get; set; } = null!;
       
-       
+       public required DbSet<Basket> Baskets { get; set; } = null!;
     }
     
         
