@@ -19,7 +19,7 @@ public class BasketController(StoreContext context,
 
         if (basket == null) return NoContent();
 
-        return basket.ToDto();
+        return basket.ToxDto();
     }
 
     [HttpPost]
