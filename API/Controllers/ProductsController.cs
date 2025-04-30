@@ -1,7 +1,7 @@
 using API.Data;
 using API.Entities;
 using API.Extensions;
-// using API.RequestHelpers;
+using API.RequestHelpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +11,7 @@ namespace API.Controllers
     {
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts(
-            [FromQuery] ProductParams productParams)
+            [FromQuery]ProductParams productParams)
         {
             var query = context.Products
                 .Sort(productParams.OrderBy)
@@ -19,7 +19,7 @@ namespace API.Controllers
                 .Filter(productParams.Brands, productParams.Types)
                 .AsQueryable();
 
-            var products = await PagedList<Product>.ToPagedList(query,
+            var products = await PagedList<Product>.ToPagedList(query, 
                 productParams.PageNumber, productParams.PageSize);
 
             Response.AddPaginationHeader(products.Metadata);
@@ -38,12 +38,12 @@ namespace API.Controllers
         }
 
         [HttpGet("filters")]
-        public async Task<IActionResult> GetFilters()
+        public async Task<IActionResult> GetFilters() 
         {
             var brands = await context.Products.Select(x => x.Brand).Distinct().ToListAsync();
             var types = await context.Products.Select(x => x.Type).Distinct().ToListAsync();
 
-            return Ok(new { brands, types });
+            return Ok(new {brands, types});
         }
     }
 }
