@@ -142,3 +142,7 @@ C:\Users\Admin\Desktop\Restore\API\obj\Debug\net9.0\API.csproj.AssemblyReference
 C:\Users\Admin\Desktop\Restore\API\obj\Debug\net9.0\API.sourcelink.json
 C:\Users\Admin\Desktop\Restore\API\obj\Debug\net9.0\API.csproj.Up2Date
 C:\Users\Admin\Desktop\Restore\API\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Admin\Desktop\Restore\API\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\Restore\API\bin\Debug\net9.0\Stripe.net.dll
+C:\Users\Admin\Desktop\Restore\API\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin\Desktop\Restore\API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
