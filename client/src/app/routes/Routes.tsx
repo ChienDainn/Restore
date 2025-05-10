@@ -12,6 +12,7 @@ import CheckoutPage from "../../features/checkout/CheckoutPage";
 import LoginForm from "../../features/account/LoginForm";
 import RegisterForm from "../../features/account/RegisterForm";
 import RequireAuth from "./RequireAuth";
+import CheckoutSuccess from "../../features/checkout/checkoutSuccess";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
         children: [
             {element: <RequireAuth />, children: [
                 {path: 'checkout', element: <CheckoutPage />},
+                {path: 'checkout/success', element: <CheckoutSuccess />},
             ]},
             {path: '', element: <HomePage />},
             {path: 'catalog', element: <Catalog />},
@@ -36,10 +38,10 @@ export const router = createBrowserRouter([
     }
 ], {
     future: {
-        // v7_relativeSplatPath: true,
-        // v7_fetcherPersist: true,
-        // v7_normalizeFormMethod: true,
-        // v7_partialHydration: true,
-        // v7_skipActionErrorRevalidation: true
+    //     v7_relativeSplatPath: true,
+    //     v7_fetcherPersist: true,
+    //     v7_normalizeFormMethod: true,
+    //     v7_partialHydration: true,
+    //     v7_skipActionErrorRevalidation: true
     }
 })
