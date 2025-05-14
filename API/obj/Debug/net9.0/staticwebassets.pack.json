@@ -1,0 +1,385 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\index-Bwiecyox.js",
+      "PackagePath": "staticwebassets\\assets\\index-Bwiecyox.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\index-De7bnZP4.css",
+      "PackagePath": "staticwebassets\\assets\\index-De7bnZP4.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-300-normal-BoeCr7ev.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-300-normal-brFHmz5Z.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-400-normal-DAIM1_dR.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-400-normal-Dry59Hjn.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-500-normal-CsCirF4J.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-500-normal-hCeO1jFL.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-700-normal-CB1Rmiii.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-700-normal-CzEIZVQR.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-300-normal-CUPJdUZp.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-300-normal-CbEu6Uxw.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-400-normal-BxX1-eA_.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-400-normal-DzMWdK87.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-500-normal-B7rQpwPu.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-500-normal-ElvJfk8V.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-700-normal-CIu0AXX2.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-700-normal-D_fA0fHY.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-C_kb6SiH.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-300-normal-C_kb6SiH.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-300-normal-Cnub06j7.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-300-normal-Cnub06j7.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-CAI06USH.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-400-normal-CAI06USH.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-400-normal-jFM2czAU.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-400-normal-jFM2czAU.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-BJMS0heP.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-500-normal-BJMS0heP.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-500-normal-D8eQD5zT.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-500-normal-D8eQD5zT.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DCrt6r9F.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-700-normal-DCrt6r9F.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-greek-700-normal-DpKAje7q.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-700-normal-DpKAje7q.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-CztWkFGs.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-300-normal-CztWkFGs.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-300-normal-xb4kL3zn.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-300-normal-xb4kL3zn.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-551zQQ7R.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-400-normal-551zQQ7R.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-400-normal-CNwBRw8h.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-500-normal-CkrA1NAy.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-500-normal-_8jDuD7w.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-500-normal-_8jDuD7w.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-CTLkNcF_.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-700-normal-CTLkNcF_.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-700-normal-DZr4b_KL.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-300-normal-BOz0oSmX.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-300-normal-ni96UL8R.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-400-normal-ZYmyxeOy.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-400-normal-uRIBRJt5.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-500-normal-C_ARlJGk.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-500-normal-eJ10kk0m.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-700-normal-BNPgmEQS.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-700-normal-Cnx4FGpK.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-BMxwzQmU.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-300-normal-BMxwzQmU.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-300-normal-Bhb_hbXj.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-300-normal-Bhb_hbXj.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-B3wgz80t.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-400-normal-B3wgz80t.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-400-normal-DHrwdhE6.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-400-normal-DHrwdhE6.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CFNaIMFC.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-500-normal-CFNaIMFC.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-500-normal-CetgDdIa.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-500-normal-CetgDdIa.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-CpTCM92H.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-700-normal-CpTCM92H.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-math-700-normal-xbpggnJp.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-math-700-normal-xbpggnJp.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-300-normal-BtHl5mYl.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-300-normal-VgGNgJlY.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-400-normal-bG5rsNFs.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-400-normal-fF1SLJBj.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-500-normal-BXFTxrNR.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-500-normal-toKUCDph.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-500-normal-toKUCDph.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-B2QKVW64.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-700-normal-B2QKVW64.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-symbols-700-normal-DKkQdRpM.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-300-normal-CNeuLW5X.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-300-normal-D46JPfnP.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-400-normal-CDDxGrUb.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-400-normal-DgufTq8s.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-500-normal-Dw5heWgq.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-500-normal-HYpufUYk.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-700-normal-BFWtvCOj.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-700-normal-ChAl_rRV.woff"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\hero1.jpg",
+      "PackagePath": "staticwebassets\\images\\hero1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\hero2.jpg",
+      "PackagePath": "staticwebassets\\images\\hero2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\hero3.jpg",
+      "PackagePath": "staticwebassets\\images\\hero3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\hero4.png",
+      "PackagePath": "staticwebassets\\images\\hero4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\boot-ang1.png",
+      "PackagePath": "staticwebassets\\images\\products\\boot-ang1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\boot-ang2.png",
+      "PackagePath": "staticwebassets\\images\\products\\boot-ang2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\boot-core1.png",
+      "PackagePath": "staticwebassets\\images\\products\\boot-core1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\boot-core2.png",
+      "PackagePath": "staticwebassets\\images\\products\\boot-core2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\boot-redis1.png",
+      "PackagePath": "staticwebassets\\images\\products\\boot-redis1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\glove-code1.png",
+      "PackagePath": "staticwebassets\\images\\products\\glove-code1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\glove-code2.png",
+      "PackagePath": "staticwebassets\\images\\products\\glove-code2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\glove-react1.png",
+      "PackagePath": "staticwebassets\\images\\products\\glove-react1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\glove-react2.png",
+      "PackagePath": "staticwebassets\\images\\products\\glove-react2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\hat-core1.png",
+      "PackagePath": "staticwebassets\\images\\products\\hat-core1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\hat-react1.png",
+      "PackagePath": "staticwebassets\\images\\products\\hat-react1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\hat-react2.png",
+      "PackagePath": "staticwebassets\\images\\products\\hat-react2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\sb-ang1.png",
+      "PackagePath": "staticwebassets\\images\\products\\sb-ang1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\sb-ang2.png",
+      "PackagePath": "staticwebassets\\images\\products\\sb-ang2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\sb-core1.png",
+      "PackagePath": "staticwebassets\\images\\products\\sb-core1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\sb-core2.png",
+      "PackagePath": "staticwebassets\\images\\products\\sb-core2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\sb-react1.png",
+      "PackagePath": "staticwebassets\\images\\products\\sb-react1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\images\\products\\sb-ts1.png",
+      "PackagePath": "staticwebassets\\images\\products\\sb-ts1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Restore\\API\\wwwroot\\vite.svg",
+      "PackagePath": "staticwebassets\\vite.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

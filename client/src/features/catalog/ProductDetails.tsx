@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { Button, Divider, Grid2, Table, TableBody, TableCell, TableContainer, TableRow, TextField, Typography } from "@mui/material";
-import { useFetchProductDetailsQuery } from "./catalogAPI";
+import { useFetchProductDetailsQuery } from "./catalogApi";
 import { useAddBasketItemMutation, useFetchBasketQuery, useRemoveBasketItemMutation } from "../basket/basketApi";
 import { ChangeEvent, useEffect, useState } from "react";
 
@@ -8,24 +8,24 @@ export default function ProductDetails() {
   const { id } = useParams();
   const [removeBasketItem] = useRemoveBasketItemMutation();
   const [addBasketItem] = useAddBasketItemMutation();
-  const {data: basket} = useFetchBasketQuery();
+  const { data: basket } = useFetchBasketQuery();
   const item = basket?.items.find(x => x.productId === +id!);
-  const [quantity, setQuantity] = useState(0); 
+  const [quantity, setQuantity] = useState(0);
 
   useEffect(() => {
     if (item) setQuantity(item.quantity);
   }, [item]);
 
-  const {data: product, isLoading} = useFetchProductDetailsQuery(id ? +id : 0)
+  const { data: product, isLoading } = useFetchProductDetailsQuery(id ? +id : 0)
 
   if (!product || isLoading) return <div>Loading...</div>
 
   const handleUpdateBasket = () => {
     const updatedQuantity = item ? Math.abs(quantity - item.quantity) : quantity;
     if (!item || quantity > item.quantity) {
-      addBasketItem({product, quantity: updatedQuantity})
+      addBasketItem({ product, quantity: updatedQuantity })
     } else {
-      removeBasketItem({productId: product.id, quantity: updatedQuantity})
+      removeBasketItem({ productId: product.id, quantity: updatedQuantity })
     }
   }
 
@@ -54,12 +54,12 @@ export default function ProductDetails() {
         <Typography variant="h4" color='secondary'>${(product.price / 100).toFixed(2)}</Typography>
         <TableContainer>
           <Table sx={{
-            '& td': {fontSize: '1rem'}
+            '& td': { fontSize: '1rem' }
           }}>
             <TableBody>
               {productDetails.map((detail, index) => (
                 <TableRow key={index}>
-                  <TableCell sx={{fontWeight: 'bold'}}>{detail.label}</TableCell>
+                  <TableCell sx={{ fontWeight: 'bold' }}>{detail.label}</TableCell>
                   <TableCell>{detail.value}</TableCell>
                 </TableRow>
               ))}
@@ -82,7 +82,7 @@ export default function ProductDetails() {
             <Button
               onClick={handleUpdateBasket}
               disabled={quantity === item?.quantity || !item && quantity === 0}
-              sx={{height: '55px'}}
+              sx={{ height: '55px' }}
               color="primary"
               size="large"
               variant="contained"
