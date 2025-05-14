@@ -1,58 +1,133 @@
 using API.Data;
+using API.DTOs;
 using API.Entities;
 using API.Extensions;
 using API.RequestHelpers;
+using API.Services;
+using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    // Controller xử lý các yêu cầu liên quan đến sản phẩm
-    public class ProductsController(StoreContext context) : BaseApiController
+    public class ProductsController(StoreContext context, IMapper mapper,
+        ImageService imageService) : BaseApiController
     {
-        // Lấy danh sách sản phẩm có hỗ trợ phân trang, tìm kiếm, sắp xếp và lọc
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts(
-            [FromQuery] ProductParams productParams) // Nhận các tham số từ query string
+            [FromQuery] ProductParams productParams)
         {
-            // Tạo truy vấn IQueryable để áp dụng các bộ lọc
             var query = context.Products
-                .Sort(productParams.OrderBy)                   // Sắp xếp theo tên hoặc giá
-                .Search(productParams.SearchTerm)              // Tìm kiếm theo từ khóa
-                .Filter(productParams.Brands, productParams.Types) // Lọc theo brand và type
-                .AsQueryable();                                // Biến thành truy vấn IQueryable
+                .Sort(productParams.OrderBy)
+                .Search(productParams.SearchTerm)
+                .Filter(productParams.Brands, productParams.Types)
+                .AsQueryable();
 
-            // Áp dụng phân trang cho truy vấn
-            var products = await PagedList<Product>.ToPagedList(query, 
+            var products = await PagedList<Product>.ToPagedList(query,
                 productParams.PageNumber, productParams.PageSize);
 
-            // Thêm thông tin phân trang vào header của response
             Response.AddPaginationHeader(products.Metadata);
 
-            return products; // Trả về danh sách sản phẩm đã phân trang
+            return products;
         }
 
-        // Lấy thông tin chi tiết của một sản phẩm theo id
-        [HttpGet("{id}")] // Đường dẫn: api/products/2
+        [HttpGet("{id}")] // api/products/2
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var product = await context.Products.FindAsync(id); // Tìm sản phẩm theo id
+            var product = await context.Products.FindAsync(id);
 
-            if (product == null) return NotFound(); // Nếu không tìm thấy thì trả về 404
+            if (product == null) return NotFound();
 
-            return product; // Trả về sản phẩm
+            return product;
         }
 
-        // Lấy danh sách các brand và type để hiển thị filter ở giao diện
         [HttpGet("filters")]
-        public async Task<IActionResult> GetFilters() 
+        public async Task<IActionResult> GetFilters()
         {
-            // Lấy danh sách brand duy nhất
             var brands = await context.Products.Select(x => x.Brand).Distinct().ToListAsync();
-            // Lấy danh sách type duy nhất
             var types = await context.Products.Select(x => x.Type).Distinct().ToListAsync();
 
-            return Ok(new { brands, types }); // Trả về object chứa cả hai danh sách
+            return Ok(new { brands, types });
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<ActionResult<Product>> CreateProduct(CreateProductDto productDto)
+        {
+            var product = mapper.Map<Product>(productDto);
+
+            if (productDto.File != null)
+            {
+                var imageResult = await imageService.AddImageAsync(productDto.File);
+
+                if (imageResult.Error != null)
+                {
+                    return BadRequest(imageResult.Error.Message);
+                }
+
+                product.PictureUrl = imageResult.SecureUrl.AbsoluteUri;
+                product.PublicId = imageResult.PublicId;
+            }
+
+            context.Products.Add(product);
+
+            var result = await context.SaveChangesAsync() > 0;
+
+            if (result) return CreatedAtAction(nameof(GetProduct), new { Id = product.Id }, product);
+
+            return BadRequest("Problem creating new procuct");
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPut]
+        public async Task<ActionResult> UpdateProduct(UpdateProductDto updateProductDto)
+        {
+            var product = await context.Products.FindAsync(updateProductDto.Id);
+
+            if (product == null) return NotFound();
+
+            mapper.Map(updateProductDto, product);
+
+            if (updateProductDto.File != null)
+            {
+                var imageResult = await imageService.AddImageAsync(updateProductDto.File);
+
+                if (imageResult.Error != null)
+                    return BadRequest(imageResult.Error.Message);
+
+                if (!string.IsNullOrEmpty(product.PublicId))
+                    await imageService.DeleteImageAsync(product.PublicId);
+
+                product.PictureUrl = imageResult.SecureUrl.AbsoluteUri;
+                product.PublicId = imageResult.PublicId;
+            }
+
+            var result = await context.SaveChangesAsync() > 0;
+
+            if (result) return NoContent();
+
+            return BadRequest("Problem updating product");
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> DeleteProduct(int id)
+        {
+            var product = await context.Products.FindAsync(id);
+
+            if (product == null) return NotFound();
+
+            if (!string.IsNullOrEmpty(product.PublicId))
+                await imageService.DeleteImageAsync(product.PublicId);
+
+            context.Products.Remove(product);
+
+            var result = await context.SaveChangesAsync() > 0;
+
+            if (result) return Ok();
+
+            return BadRequest("Problem deleting the product");
         }
     }
 }

@@ -4,13 +4,13 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { loginSchema, LoginSchema } from "../../lib/schemas/loginSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useLazyUserInfoQuery, useLoginMutation } from "./accountAPI";
+import { useLazyUserInfoQuery, useLoginMutation } from "./accountApi";
 
 export default function LoginForm() {
-    const [login, {isLoading}] = useLoginMutation();
+    const [login, { isLoading }] = useLoginMutation();
     const [fetchUserInfo] = useLazyUserInfoQuery();
     const location = useLocation();
-    const {register, handleSubmit, formState: {errors}} = useForm<LoginSchema>({
+    const { register, handleSubmit, formState: { errors } } = useForm<LoginSchema>({
         mode: 'onTouched',
         resolver: zodResolver(loginSchema)
     });
@@ -20,7 +20,7 @@ export default function LoginForm() {
         await login(data);
         await fetchUserInfo();
         navigate(location.state?.from || '/catalog');
-    } 
+    }
 
     return (
         <Container component={Paper} maxWidth='sm' sx={{ borderRadius: 3 }}>

@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "../store/store";
 import { setDarkMode } from "./uiSlice";
 import { useFetchBasketQuery } from "../../features/basket/basketApi";
 import UserMenu from "./UserMenu";
-import { useUserInfoQuery } from "../../features/account/accountAPI";
+import { useUserInfoQuery } from "../../features/account/accountApi";
 
 const midLinks = [
     { title: 'catalog', path: '/catalog' },
